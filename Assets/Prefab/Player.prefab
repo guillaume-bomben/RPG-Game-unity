@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 1890826738279278472}
   - component: {fileID: 7128683829074291688}
   - component: {fileID: 2506107160305899224}
-  - component: {fileID: 2307061112125732888}
   - component: {fileID: 3915933611425128090}
   - component: {fileID: 4835115485308696681}
   - component: {fileID: 7095910240813800223}
+  - component: {fileID: 2307061112125732888}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8503587594697146513}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -119,19 +119,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2307061112125732888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8503587594697146513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08d8a2cf0ab40db4c87198a1ef62f82e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
 --- !u!95 &3915933611425128090
 Animator:
   serializedVersion: 7
@@ -213,8 +200,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  teleportPosition: {x: -0.95, y: 12.5, z: 0}
-  teleportTilesCoords:
-  - {x: -1, y: 3, z: 0}
-  - {x: 0, y: 3, z: 0}
-  newBounds: {fileID: 0}
+  teleporters:
+  - teleportTilesCoords:
+    - {x: -1, y: 3, z: 0}
+    - {x: 0, y: 3, z: 0}
+    teleportPosition: {x: 0, y: 13.5, z: 0}
+    newBounds: {fileID: 0}
+  - teleportTilesCoords:
+    - {x: -1, y: 12, z: 0}
+    - {x: 0, y: 12, z: 0}
+    teleportPosition: {x: 0, y: 2.5, z: 0}
+    newBounds: {fileID: 0}
+--- !u!114 &2307061112125732888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8503587594697146513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d8a2cf0ab40db4c87198a1ef62f82e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
