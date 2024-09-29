@@ -7,6 +7,7 @@ class Character : MonoBehaviour{
     public uint Experience;
     private uint ExperienceToNextLevel;
     private uint MaxLevel = 100;
+    public bool isAlive;
     private Sprite sprite;
 
     public void CalculateCurrentStats(){
