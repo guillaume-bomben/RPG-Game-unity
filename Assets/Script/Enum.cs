@@ -1,4 +1,5 @@
 public enum Stat{
+    CurrentHealth,
     Health,
     Mana,
     Stamina,
@@ -6,5 +7,7 @@ public enum Stat{
     MagicAttack,
     PhysicalDefense,
     MagicDefense,
-    Speed
+    Speed,
+    CurrentMana,
+    CurrentStamina
 }
